@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Go-Eco"/>
+	<meta property="og:description" content="Go-Eco"/>
+	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+	<link rel="icon" href="favicon-48x48.png" sizes="48x48" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.bundle.css">
+	<title>Go-Eco</title>
+</head>
+<body>
+
+    <div class="main">
+
+		<div class="contacts-popup">
+			<div class="contacts-popup-wrapper">
+				<a href="tel:+380671553535">+38 067 155 35 35</a>
+				<a href="tel:+380671553535">+38 067 155 35 35</a>
+				<a href="tel:+380671553535">+38 067 155 35 35</a>
+				<button class="close-tel-popup-btn">Вернуться</button>
+			</div>
+		</div>
+		<div class="menu-popup">
+			<div class="menu-popup-wrapper">
+				<a href="/">Услуги</a>
+				<a href="">О нас</a>
+				<a href="/contacts">Контакты</a>
+				<button class="close-menu-popup-btn">Вернуться</button>
+			</div>
+		</div>
+
+        <header>
+			<a href="/" class="logo"></a>
+			<div class="header-content-mob">
+				<div class="header-numbers">
+					<a href="tel:+380671553535">+38 067 155 35 35</a>
+					<a href="tel:+380671553535">+38 067 155 35 35</a>
+					<a href="tel:+380671553535">+38 067 155 35 35</a>
+				</div>
+				<div class="header-tel-btn"></div>
+				<div class="header-menu-btn"></div>
+			</div>
+			<div class="header-content">
+				<div class="header-contacts">
+					<div class="header-numbers">
+						<a href="tel:+380671553535">+38 067 155 35 35</a>
+						<a href="tel:+380671553535">+38 067 155 35 35</a>
+						<a href="tel:+380671553535">+38 067 155 35 35</a>
+					</div>
+					<a href="mailto:info@go-eco.com" target="_blank">info@go-eco.com</a>
+				</div>
+				<div class="header-nav">
+					<button class="header-nav-select">Категория услуг</button>
+					<nav>
+						<a href="">О нас</a>
+						<a href="/contacts">Контакты</a>
+					</nav>
+				</div>
+				<ul class="category-select">
+					<li><a href="/service-1">Газовый конденсат</a></li>
+					<li><a href="">Смолы</a></li>
+					<li><a href="">Мазут</a></li>
+					<li><a href="">Масла</a></li>
+					<li><a href="">Гудрон</a></li>
+					<li><a href="">Битум</a></li>
+					<li><a href="">Нефтешлам</a></li>
+					<li><a href="">Кубовый остаток после хранения нефти</a></li>
+					<li><a href="">Дизельное топливо</a></li>
+					<li><a href="">Бензин</a></li>
+					<li><a href="">Керосин</a></li>
+				</ul>
+			</div>
+		</header>
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+			<div class="footer-content">
+				<div class="footer-contacts">
+					<h2>Киев, Спортивная площадь, дом 1а, 15 этаж</h2>
+					<a href="tel:+380671553535">+38 067 155 35 35</a>
+					<a href="tel:+380671553535">+38 067 155 35 35</a>
+					<a href="tel:+380671553535">+38 067 155 35 35</a>
+					<div class="footer-logo"></div>
+				</div>
+				<div class="footer-categories">
+					<h2>Категории Услуг</h2>
+					<a href="/service-1">Конденсат</a>
+					<a href="">Смолы</a>
+					<a href="">Мазут</a>
+					<a href="">Масла</a>
+					<a href="">Гудрон</a>
+					<a href="">Битум</a>
+					<a href="">Нефтешлам</a>
+					<a href="">Кубовый остаток после хранения нефти </a>
+					<a href="">Дизельное топливо</a>
+					<a href="">Бензин</a>
+					<a href="">Керосин</a>
+				</div>
+				<div class="footer-menu">
+					<h2>Карта сайта</h2>
+					<a href="/#categories">Услуги</a>
+					<a href="">О нас</a>
+					<a href="/contacts">Контакты</a>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<a class="almo-icon" href="https://almodigital.com" target="_blank">Создано </a>
+				<p>© GO ECO GROUP, 2020</p>
+				<ul>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</footer>
+    </div>
+    <script type="text/javascript" src="../static/js/bundle.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="order-form-wrapper">
+    <form id="order-form" class="order-form">
+        <h1>Напишите нам и мы утилизируем</h1>
+        <p>Очень курто зувучит, плавда?</p>
+        <div class="order-form-inputs">
+            <input type="text" name="name" placeholder="Введите свое имя*" required>
+            <input type="text" name="company" placeholder="Название компании">
+            <input type="text" name="tel" placeholder="Номер телефона*" required>
+            <input type="text" name="email" placeholder="Email*" required>
+            <textarea name="item" placeholder="Что нужно утилизировать?*" required>{% if item %}{{ item }}{% endif %}</textarea>
+        </div>
+        <div class="form-btn-wrapper">
+            <label>
+                <input type="checkbox" name="checkbox" checked>
+                <span><div>я даю согласие на обработку <a href="">персональных данных</a></div></span>
+            </label>
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}

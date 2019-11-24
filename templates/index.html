@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<div class="head-banner-wrapper">
+		<div class="head-banner">
+			<div class="head-banner-content">
+			<h1>Утилизация и переработка отходов по всей Украине</h1>
+			<h2>Каждый час мы утилизируем более 100 000 тонн отходов</h2>
+			<form class="head-banner-form" id="head-banner-form">
+				<input type="text" name="item" placeholder="Что нужно утилизировать?" required>
+				<button>Подать заявку</button>
+			</form>
+		</div>
+		<a class="categories-btn" href="#categories"><span></span>Все категории услуг</a>
+		</div>
+	</div>
+
+	<div id="categories" class="categories">
+		<a class="category-item" href="/service-1">
+			<img src="../static/img/condensate.jpg">
+			<p>Конденсат</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/pitches.jpg">
+			<p>Смолы</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/fuel_oil.jpg">
+			<p>Мазут</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/oils.jpg">
+			<p>Масла</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/tar.jpg">
+			<p>Гудрон</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/bitumen.jpg">
+			<p>Битум</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/oil_sludge.jpg">
+			<p>Нефтешлам</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/balance.jpg">
+			<p>Кубовый остаток после хранения нефти</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/diesel_fuel.jpg">
+			<p>Дизельное топливо</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/petrol.jpg">
+			<p>Бензин</p>
+		</a>
+		<a class="category-item" href="#">
+			<img src="../static/img/kerosene.jpg">
+			<p>Керосин</p>
+		</a>
+	</div>
+
+{% endblock content %}
+
+
