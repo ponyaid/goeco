@@ -59,10 +59,10 @@ closeMenuPopupBtn.addEventListener('click', () => {
     menuPopup.classList.remove('popup-active');
 });
 
-
-
-
-
+document.querySelector('#services-btn').addEventListener('click', () => {
+    document.body.classList.remove('body-popup-active');
+    menuPopup.classList.remove('popup-active');
+});
 
 
 
