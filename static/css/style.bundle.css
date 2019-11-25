@@ -476,7 +476,6 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
   padding: 70px calc((100% - 1020px) / 2) 0;
   background-color: #262626;
   color: #fff;
@@ -1068,7 +1067,6 @@ footer a:hover { opacity: .5; }
     /* BASE */
     .header-content-mob .header-numbers { display: none; }
     .header-menu-btn, .header-tel-btn { display: inline; }
-    footer { justify-content: space-between; }
 
     .footer-content { border-bottom: none; padding-bottom: 100px; }
     .footer-logo { margin-top: 80px; }
