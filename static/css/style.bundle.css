@@ -1069,7 +1069,7 @@ footer a:hover { opacity: .5; }
     top: 24px;
     display: flex;
     flex-direction: column;
-    width: 320px;
+    min-width: 320px;
 }
 
 .service-tabs {
@@ -1163,7 +1163,8 @@ footer a:hover { opacity: .5; }
 .service-body {
     display: flex;
     flex-direction: column;
-    width: 670px;
+    width: 100%;
+    margin-left: 30px;
 }
 
 .service-body-item {
@@ -1222,6 +1223,9 @@ footer a:hover { opacity: .5; }
     .contacts-banner { width: 100%; }
     .crumbs { padding: 8px 60px 24px; }
     .contacts-content { padding: 0 60px 80px; }
+
+    /* SERVICE */
+    .service-wrapper { padding: 0 60px; }
 }
 
 
@@ -1245,6 +1249,26 @@ footer a:hover { opacity: .5; }
         display: flex;
         width: 100%;
     }
+
+    /* SERVICE */
+    .service-wrapper { padding: 0; }
+    .service {
+        flex-direction: column;
+        padding: 80px 60px;
+        margin: 0;
+    }
+    .service-tools {
+        position: static;
+        top: auto;
+        order: 2;
+        min-width: auto;
+        width: 100%;
+
+    }
+    .service-body { margin-left: 0; }
+    .service-tabs { display: none; }
+    .service-body-item { margin-bottom: 24px !important; }
+
 }
 
 
@@ -1258,6 +1282,12 @@ footer a:hover { opacity: .5; }
         font-size: 16px;
         font-weight: 500;
         line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.27;
     }
 
     /* BASE */
@@ -1399,6 +1429,27 @@ footer a:hover { opacity: .5; }
 
     /* ORDER */
     .order-form-wrapper { padding: 40px 16px 80px; }
+
+    /* SERVICE */
+    .service-banner {
+        height: 380px;
+        padding: 80px 16px;
+
+    }
+    .service-banner-content h2 { margin: 8px 0 32px; }
+    .service-banner-content a {
+        width: 100%;
+        text-align: center;
+        line-height: 38px;
+    }
+    .service {
+        z-index: 2;
+        padding: 0 16px 40px;
+        margin-top: -50px;
+    }
+    .service-body-item { padding: 16px; }
+    .service-btns a { line-height: 38px !important; }
+
 }
 
 

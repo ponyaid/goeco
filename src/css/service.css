@@ -63,7 +63,7 @@
     top: 24px;
     display: flex;
     flex-direction: column;
-    width: 320px;
+    min-width: 320px;
 }
 
 .service-tabs {
@@ -157,7 +157,8 @@
 .service-body {
     display: flex;
     flex-direction: column;
-    width: 670px;
+    width: 100%;
+    margin-left: 30px;
 }
 
 .service-body-item {
