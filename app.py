@@ -1,3 +1,5 @@
+import jinja2
+import socket
 import os
 from threading import Thread
 
@@ -110,6 +112,13 @@ def order_form():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def template_not_found(error):
+    if issubclass(jinja2.exceptions.TemplateNotFound, socket.error):
+        return render_template('404.html'), 500
+    abort(500)
 
 
 if __name__ == '__main__':
