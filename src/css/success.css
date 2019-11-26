@@ -6,11 +6,7 @@
     min-height: calc(100vh - 104px);
 }
 
-.success-img {
-    margin-bottom: 72px;
-    width: 186px; height: 200px;
-    background: url(../img/success_img.svg) no-repeat center / cover;
-}
+.success svg { margin-bottom: 72px; }
 
 .success h1 { color: #3f3f3f; text-align: center; }
 .success p {
@@ -26,12 +22,14 @@
 .success a {
     padding: 0 32px;
     border-radius: 4px;
-    background-color: #44c543;
+    background: #44c543;
     font-family: SFProDisplay;
     font-size: 14px;
     font-weight: 600;
     line-height: 50px;
     color: #ffffff;
+    transition: background .2s ease;
 }
 
-.success a:hover { background-color: #3AAC39; }
+.success a:hover,
+.success a:focus { background: #3AAC39; }

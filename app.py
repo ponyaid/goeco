@@ -63,7 +63,7 @@ def about():
 
 
 @app.route('/service/<int:num>', methods=['GET'])
-def service_1(num):
+def service(num):
     if request.method == 'GET':
         template = f'service-{num}.html'
         return render_template(template)
@@ -105,6 +105,11 @@ def order_form():
         return Response(status=200)
     else:
         abort(405)
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
 
 
 if __name__ == '__main__':

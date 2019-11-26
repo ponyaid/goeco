@@ -46,7 +46,8 @@
     transition: background .2s ease;
 }
 
-.service-banner-content a:hover { background: #3AAC39; }
+.service-banner-content a:hover,
+.service-banner-content a:focus { background: #3AAC39; }
 
 .service-wrapper .crumbs { padding-left: 0 !important; }
 
@@ -131,7 +132,8 @@
     transition: box-shadow .2s ease;
 }
 
-.service-btns a:nth-child(1):hover {
+.service-btns a:nth-child(1):hover,
+.service-btns a:nth-child(1):focus {
     box-shadow: 0 10px 14px -6px rgba(68, 197, 67, 0.4);
 }
 
@@ -149,7 +151,8 @@
     transition: background .2s ease;
 }
 
-.service-btns a:nth-child(2):hover {
+.service-btns a:nth-child(2):hover,
+.service-btns a:nth-child(2):focus {
     background: #44c543;
     color: #fff;
 }

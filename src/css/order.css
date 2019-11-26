@@ -135,7 +135,8 @@
     transition: background .2s ease;
 }
 
-.form-btn-wrapper button:hover { background: #3AAC39; }
+.form-btn-wrapper button:hover,
+.form-btn-wrapper button:focus { background: #3AAC39; }
 
 
 

@@ -1,5 +1,26 @@
 @media (hover:none) {
+    /* INDEX */
+    .head-banner-form button:hover { background: #44c543; }
+    .categories-btn:hover { opacity: 1; }
+    .category-item:hover img { transform: none; }
+    footer a:hover { opacity: 1; }
 
+    /* CONTACTS */
+    .order-service a:hover { box-shadow: none; }
+    .contacts-content-dsc-numbers a:hover p { opacity: 1; }
+
+    /* ORDER */
+    .order-form-inputs input:hover,
+    .order-form-inputs textarea:hover { border: none; }
+    .form-btn-wrapper button:hover { background: #44c543; }
+
+    /* SUCCESS */
+    .success a:hover { background: #44c543; }
+
+    /* SERVICE */
+    .service-banner-content a:hover { background: #44c543; }
+    .service-btns a:nth-child(1):hover { box-shadow: none; }
+    .service-btns a:nth-child(2):hover { background: transparent; color: #44c543; }
 }
 
 @media (max-width: 1140px) {
@@ -178,7 +199,7 @@
 
     /* SUCCESS */
     .success { padding: 56px 16px 80px; }
-    .success-img { width: 100px; height: 108px; margin-bottom: 48px; }
+    .success svg { height: 108px; margin-bottom: 48px; }
     .success a { width: 100%; text-align: center; }
 
     /* CONTACTS */
