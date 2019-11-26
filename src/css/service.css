@@ -142,7 +142,7 @@
     font-family: SFProDisplay;
     font-size: 14px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 48px;
     text-align: center;
     color: #44c543;
     margin-top: 16px;
@@ -190,7 +190,6 @@
     color: #44c543;
 }
 
-.service-body-item ol { margin-left: 24px; }
-.service-body-item ol li { padding-left: 8px; }
-
-.service-body-item .decimal-list { list-style-type: decimal; }
+.service-body-item ol,
+.service-body-item ul { margin-left: 24px; }
+.service-body-item li { padding-left: 8px; }

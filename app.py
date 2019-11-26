@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = os.urandom(24)
 
 SENDER = 'notify.go.eco.grpup@gmail.com'
 SENDER_PASS = '$Joo3m21$J'
-RECIPIENTS = ['moskvichovoleg@gmail.com']
+RECIPIENTS = ['go-eco.group@i.ua', 'moskvichovoleg@gmail.com']
 
 app.config.update(dict(
     MAIL_SERVER='smtp.gmail.com',
@@ -28,10 +28,16 @@ app.config.update(dict(
 mail = Mail(app)
 
 
+def send_email(msg):
+    with app.app_context():
+        mail.send(msg)
+
+
 @app.route('/', methods=['GET'])
 def index():
     if request.method == 'GET':
         return render_template('index.html')
+    abort(405)
 
 
 @app.route('/order/', methods=['GET'])
@@ -39,23 +45,36 @@ def order():
     if request.method == 'GET':
         item = request.args.get('item')
         return render_template('order.html', item=item)
+    abort(405)
 
 
 @app.route('/contacts/', methods=['GET'])
 def contacts():
     if request.method == 'GET':
         return render_template('contacts.html')
+    abort(405)
+
+
+@app.route('/about/', methods=['GET'])
+def about():
+    if request.method == 'GET':
+        return render_template('about.html')
+    abort(405)
+
+
+@app.route('/service/<int:num>', methods=['GET'])
+def service_1(num):
+    if request.method == 'GET':
+        template = f'service-{num}.html'
+        return render_template(template)
+    abort(405)
 
 
 @app.route('/success/', methods=['GET'])
 def success():
     if request.method == 'GET':
         return render_template('success.html')
-
-
-def send_email(msg):
-    with app.app_context():
-        mail.send(msg)
+    abort(405)
 
 
 @app.route('/order_form/', methods=['POST'])
@@ -86,13 +105,6 @@ def order_form():
         return Response(status=200)
     else:
         abort(405)
-
-
-@app.route('/service-1/', methods=['GET'])
-def service_1():
-    if request.method == 'GET':
-        return render_template('service-1.html')
-    abort(405)
 
 
 if __name__ == '__main__':

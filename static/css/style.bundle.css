@@ -1148,7 +1148,7 @@ footer a:hover { opacity: .5; }
     font-family: SFProDisplay;
     font-size: 14px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 48px;
     text-align: center;
     color: #44c543;
     margin-top: 16px;
@@ -1196,10 +1196,34 @@ footer a:hover { opacity: .5; }
     color: #44c543;
 }
 
-.service-body-item ol { margin-left: 24px; }
-.service-body-item ol li { padding-left: 8px; }
+.service-body-item ol,
+.service-body-item ul { margin-left: 24px; }
+.service-body-item li { padding-left: 8px; }
 
-.service-body-item .decimal-list { list-style-type: decimal; }
+.about .service-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 320px;
+    padding: 60px;
+}
+
+.about .service-banner-content h2 { margin: 16px 0 0; }
+
+.body-item-pictures {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.body-item-pictures img {
+    width: 279px;
+    height: 371px;
+    object-fit: cover;
+}
+
 
 @media (hover:none) {
 
@@ -1432,7 +1456,7 @@ footer a:hover { opacity: .5; }
 
     /* SERVICE */
     .service-banner {
-        height: 380px;
+        height: 380px !important;
         padding: 80px 16px;
 
     }
@@ -1445,11 +1469,22 @@ footer a:hover { opacity: .5; }
     .service {
         z-index: 2;
         padding: 0 16px 40px;
-        margin-top: -50px;
+        margin-top: -56px;
     }
-    .service-body-item { padding: 16px; }
+    .service-body-item { padding: 16px 16px 32px; }
     .service-btns a { line-height: 38px !important; }
 
+    /* ABOUT */
+    .about .service-banner {
+        padding: 122px 16px 0;
+        align-items: flex-start;
+    }
+    .body-item-pictures {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .body-item-pictures img { width: 100%; height: 340px; }
+    .body-item-pictures img:not(:last-child) { margin-bottom: 16px; }
 }
 
 

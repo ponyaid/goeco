@@ -1,0 +1,24 @@
+.about .service-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 320px;
+    padding: 60px;
+}
+
+.about .service-banner-content h2 { margin: 16px 0 0; }
+
+.body-item-pictures {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.body-item-pictures img {
+    width: 279px;
+    height: 371px;
+    object-fit: cover;
+}
+
