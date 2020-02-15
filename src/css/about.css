@@ -12,13 +12,20 @@
 
 .body-item-pictures {
     display: flex;
+    flex-flow: wrap;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: -1.5em;
 }
 
-.body-item-pictures img {
-    width: 279px;
-    height: 371px;
+.body-item-pictures a {
+    width: calc( 50% - 15px );
+    margin-bottom: 1.5em;
+}
+
+.body-item-pictures a img {
+    width: 100%;
     object-fit: cover;
 }
+
 

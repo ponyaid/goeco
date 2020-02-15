@@ -175,15 +175,17 @@
 
 .service-body-item:not(:last-child) { margin-bottom: 40px; }
 
-.service-body-item h3 { color: #3f3f3f; margin-bottom: 16px; }
+.service-body-item h3 { color: #3f3f3f; font-size: 32px; margin-bottom: .75em; }
 .service-body-item p,
-.service-body-item p, li {
+.service-body-item p, li, b {
     font-family: SFProDisplay;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.38;
     color: #3f3f3f;
 }
+
+.service-body-item b { color: #44c543; }
 
 .service-body-item a {
     font-family: SFProDisplay;

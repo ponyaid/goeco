@@ -1,4 +1,16 @@
+import 'jquery';
+import '@fancyapps/fancybox';
 import { stringify } from 'query-string';
+
+import './rotationBtn';
+
+
+$(document).ready(function() {
+		$(".fancybox").fancybox({
+            // openEffect	: 'none',
+		    // closeEffect	: 'none'
+        });
+	});
 
 const errorValidMail = 'E-mail не валидный.',
     errorValidTel = 'Телефон не валидный.',

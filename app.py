@@ -64,6 +64,13 @@ def about():
     abort(405)
 
 
+@app.route('/what/', methods=['GET'])
+def what():
+    if request.method == 'GET':
+        return render_template('what.html')
+    abort(405)
+
+
 @app.route('/service/<int:num>', methods=['GET'])
 def service(num):
     if request.method == 'GET':

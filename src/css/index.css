@@ -588,3 +588,38 @@ footer a:hover { opacity: .5; }
 .footer-copyright li a { width: 24px; height: 24px; }
 .footer-copyright ul li:nth-child(1) a { background: url(../img/twitter.svg) no-repeat center; }
 .footer-copyright ul li:nth-child(2) a { background: url(../img/instagram.svg) no-repeat center; }
+
+.rotation-btn {
+  z-index: 999;
+  position: fixed;
+  right: -1px; top: 40vh;
+  border: solid 1px #44c543;
+  background-color: #ffffff;
+  border-radius: 4px 4px 0 0;
+  transform-origin: right bottom;
+  transition: background-color .2s ease;
+  transform: rotate(-90deg);
+}
+
+.rotation-btn a {
+  display: block;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.57;
+  font-style: normal;
+  padding: 14px 32px;
+  font-family: SFProDisplay;
+  transition: color .2s ease;
+}
+
+.rotation-btn:hover { background-color: #44c543; }
+.rotation-btn:hover a { color: #fff; }
+
+@media (max-height: 425px) {
+  .rotation-btn { display: none; }
+}
+
+@media (max-width: 640px) {
+  .rotation-btn a { padding: 8px 32px; }
+}

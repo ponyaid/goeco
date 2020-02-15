@@ -1,3 +1,5 @@
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+
 @import 'index.css';
 
 @import 'contacts.css';
