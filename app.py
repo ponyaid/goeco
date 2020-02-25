@@ -20,9 +20,9 @@ app.config.update(dict(
     MAIL_USE_TLS=True,
     MAIL_USE_SSL=False,
     MAIL_DEBUG=False,
-    MAIL_USERNAME=f'{SENDER}',
-    MAIL_PASSWORD=f'{SENDER_PASS}',
-    MAIL_DEFAULT_SENDER=f'{SENDER}',
+    MAIL_USERNAME='%s' % SENDER,
+    MAIL_PASSWORD='%s' % SENDER_PASS,
+    MAIL_DEFAULT_SENDER='%s' % SENDER,
     MAIL_MAX_EMAILS=None,
     MAIL_ASCII_ATTACHMENTS=False,
 ))
@@ -74,7 +74,7 @@ def what():
 @app.route('/service/<int:num>', methods=['GET'])
 def service(num):
     if request.method == 'GET':
-        template = f'service-{num}.html'
+        template = 'service-%d.html' % num
         return render_template(template)
     abort(405)
 
