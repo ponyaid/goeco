@@ -246,7 +246,7 @@ header {
 }
 
 .header-content a,
-.header-numbers a {
+.header-number {
   font-family: Abel;
   font-size: 13px;
   font-style: normal;
@@ -256,7 +256,18 @@ header {
   margin-bottom: 9px;
 }
 
-.header-numbers a { margin-bottom: 0; }
+.header-number {
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.header-numbers {
+  display: flex;
+}
+
+.header-social a:not(:last-child) {
+  margin-right: 1rem;
+}
 
 .header-contacts {
   display: flex;
@@ -267,8 +278,7 @@ header {
 .header-contacts a { transition: opacity .2s ease; }
 .header-contacts a:hover { opacity: .5; }
 
-.header-numbers a:nth-child(1),
-.header-numbers a:nth-child(2) {
+.header-number {
   padding-right: 16px;
   margin-right: 15px;
   border-right: 1px solid rgba(63, 63, 63, 0.1);

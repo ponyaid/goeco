@@ -46,11 +46,10 @@
     .service-wrapper { padding: 0 60px; }
 }
 
-
 @media (max-width: 1024px) {
     /* BASE */
     header { height: 64px; }
-    .logo { width: 117px; height: 26px; min-width: auto; }
+    .logo { width: 117px; height: 26px; min-width: auto; margin-right: auto; }
     .header-content { display: none; }
     .header-content-mob { display: flex; }
 
