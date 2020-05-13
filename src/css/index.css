@@ -106,6 +106,21 @@ h3 {
   z-index: 9999;
 }
 
+.contacts-popup .header-social {
+  display: flex;
+}
+
+.contacts-popup .header-social a {
+  display: flex;
+  line-height: normal;
+  padding: 8px;
+  margin-bottom: 24px;
+  border-radius: 100%;
+  border: none;
+  background: #fff;
+
+}
+
 .popup-active {
   opacity: 1;
   display: inline;
