@@ -187,7 +187,7 @@ header {
   width: 144px;
   height: 32px;
   margin-right: 60px;
-  background: url(../img/logo.svg) no-repeat center / cover;
+  background: url(../img/logo.svg) no-repeat left center / contain;
 }
 
 .header-content-mob {
